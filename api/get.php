@@ -1,4 +1,5 @@
 <?php
+
 /**
  * getFavicon
  * @author    一为
@@ -18,7 +19,7 @@ $favicon = new \Jerrybendy\Favicon\Favicon;
 
 /* ------ 参数设置 ------ */
 
-$defaultIco='favicon.png';   //默认图标路径
+$defaultIco='/var/task/user/favicon.png';   //默认图标路径
 $expire = 2592000;           //缓存有效期30天, 单位为:秒，为0时不缓存
 
 /* ------ 参数设置 ------ */
@@ -47,14 +48,14 @@ if($expire == 0){
 else{
     $defaultMD5 = md5(file_get_contents($defaultIco));
     
-    $data = Cache::get($formatUrl,$defaultMD5,$expire);
-    if ($data !== NULL) {
-        foreach ($favicon->getHeader() as $header) {
-            @header($header);
-        }
-        echo $data;
-        exit;
-    }
+//    $data = Cache::get($formatUrl,$defaultMD5,$expire);
+//    if ($data !== NULL) {
+//        foreach ($favicon->getHeader() as $header) {
+//            @header($header);
+//        }
+//        echo $data;
+//        exit;
+//    }
 
     /**
      * 缓存中没有指定的内容时, 重新获取内容并缓存起来
@@ -65,7 +66,7 @@ else{
         $expire = 43200; //如果返回默认图标，设置过期时间为12小时。Cache::get 方法中需同时修改
     }
 
-    Cache::set($formatUrl, $content, $expire);
+//    Cache::set($formatUrl, $content, $expire);
 
     foreach ($favicon->getHeader() as $header) {
         @header($header);
