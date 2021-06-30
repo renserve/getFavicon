@@ -11,7 +11,7 @@ if( !isset($_GET['url'])){
     return http_response_code(404);
 }
 
-require "./Favicon.php";
+require "api/Favicon.php";
 
 $favicon = new \Jerrybendy\Favicon\Favicon;
 

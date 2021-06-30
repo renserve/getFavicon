@@ -19,10 +19,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\需求\getFavicon-master" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\需求\getFavicon-master" />
       <recent name="C:\Users\admin\Desktop\需求\getFavicon-master\api" />
     </key>
   </component>
@@ -34,7 +39,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625021718011</updated>
-      <workItem from="1625021719049" duration="24000" />
+      <workItem from="1625021719049" duration="543000" />
     </task>
     <servers />
   </component>
