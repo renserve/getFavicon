@@ -91,7 +91,7 @@ class Cache
      */
     public static function get($key, $default, $expire)
     {
-        $dir = 'cache'; //图标缓存目录
+        $dir = '/var/task/user/cache'; //图标缓存目录
        
         //$f = md5( strtolower( $key ) );
         $f = parse_url($key)['host'];
