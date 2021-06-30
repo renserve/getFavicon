@@ -2,6 +2,10 @@
 获取网站的Favicon图标并显示在你的网页上.
 <br/>
 
+### vercel部署，（写权限不知道怎么获取，因此缓存注释掉了）
+目录要修改为：/var/task/user
+添加vercel.json
+
 ### 演示
 <a href="https://api.iowen.cn/favicon/" target="_blank">演示地址</a>
 <br/>
